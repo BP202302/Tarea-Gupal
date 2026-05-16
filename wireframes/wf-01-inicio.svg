@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" font-family="Arial, sans-serif" font-size="14">
+  <rect width="800" height="1000" fill="#f5f5f5"/>
+
+  <!-- Header -->
+  <rect x="20" y="20" width="760" height="60" fill="#fff" stroke="#333"/>
+  <text x="40" y="55" font-weight="bold">LOGO SABORYA</text>
+  <text x="220" y="55">Inicio | Restaurantes | Menú | Ofertas | Reservas | Pedido | Contacto</text>
+  <rect x="640" y="35" width="120" height="30" fill="none" stroke="#999" rx="15"/>
+  <text x="660" y="55" fill="#999">🔍 Buscar...</text>
+
+  <!-- Banner / Hero -->
+  <rect x="20" y="100" width="760" height="200" fill="#E63946" stroke="#333"/>
+  <text x="400" y="180" text-anchor="middle" fill="#fff" font-size="28" font-weight="bold">Pide tu comida favorita en minutos</text>
+  <text x="400" y="220" text-anchor="middle" fill="#fff">Descubre restaurantes, ofertas y reservas en un solo lugar</text>
+  <rect x="340" y="240" width="120" height="40" fill="#F1A208" stroke="#333"/>
+  <text x="400" y="265" text-anchor="middle" font-weight="bold">Ver menú</text>
+
+  <!-- Categorías -->
+  <text x="40" y="340" font-size="18" font-weight="bold">Categorías</text>
+  <g>
+    <rect x="40" y="360" width="120" height="100" fill="#fff" stroke="#333"/>
+    <text x="100" y="395" text-anchor="middle" font-size="30">🍕</text>
+    <text x="100" y="430" text-anchor="middle">Pizza</text>
+
+    <rect x="180" y="360" width="120" height="100" fill="#fff" stroke="#333"/>
+    <text x="240" y="395" text-anchor="middle" font-size="30">🍔</text>
+    <text x="240" y="430" text-anchor="middle">Burgers</text>
+
+    <rect x="320" y="360" width="120" height="100" fill="#fff" stroke="#333"/>
+    <text x="380" y="395" text-anchor="middle" font-size="30">🍣</text>
+    <text x="380" y="430" text-anchor="middle">Sushi</text>
+
+    <rect x="460" y="360" width="120" height="100" fill="#fff" stroke="#333"/>
+    <text x="520" y="395" text-anchor="middle" font-size="30">🥗</text>
+    <text x="520" y="430" text-anchor="middle">Saludable</text>
+
+    <rect x="600" y="360" width="120" height="100" fill="#fff" stroke="#333"/>
+    <text x="660" y="395" text-anchor="middle" font-size="30">🌮</text>
+    <text x="660" y="430" text-anchor="middle">Mexicana</text>
+  </g>
+
+  <!-- Restaurantes destacados -->
+  <text x="40" y="500" font-size="18" font-weight="bold">Restaurantes destacados</text>
+  <g>
+    <rect x="40" y="520" width="170" height="180" fill="#fff" stroke="#333"/>
+    <rect x="40" y="520" width="170" height="100" fill="#FFE0B2"/>
+    <text x="125" y="650" text-anchor="middle" font-weight="bold">Pizzería Luna</text>
+    <text x="125" y="675" text-anchor="middle" font-size="12">★ 4.8 · 25–35 min</text>
+
+    <rect x="225" y="520" width="170" height="180" fill="#fff" stroke="#333"/>
+    <rect x="225" y="520" width="170" height="100" fill="#FFCDD2"/>
+    <text x="310" y="650" text-anchor="middle" font-weight="bold">Burger House</text>
+    <text x="310" y="675" text-anchor="middle" font-size="12">★ 4.6 · 20–30 min</text>
+
+    <rect x="410" y="520" width="170" height="180" fill="#fff" stroke="#333"/>
+    <rect x="410" y="520" width="170" height="100" fill="#C8E6C9"/>
+    <text x="495" y="650" text-anchor="middle" font-weight="bold">Sushi Ko</text>
+    <text x="495" y="675" text-anchor="middle" font-size="12">★ 4.9 · 30–40 min</text>
+
+    <rect x="595" y="520" width="170" height="180" fill="#fff" stroke="#333"/>
+    <rect x="595" y="520" width="170" height="100" fill="#FFF9C4"/>
+    <text x="680" y="650" text-anchor="middle" font-weight="bold">Tacos El Patrón</text>
+    <text x="680" y="675" text-anchor="middle" font-size="12">★ 4.5 · 20–25 min</text>
+  </g>
+
+  <!-- Ofertas -->
+  <text x="40" y="740" font-size="18" font-weight="bold">Ofertas del día</text>
+  <g>
+    <rect x="40" y="760" width="235" height="120" fill="#E63946"/>
+    <text x="158" y="800" text-anchor="middle" fill="#fff" font-weight="bold">2x1 Pizza familiar</text>
+    <text x="158" y="850" text-anchor="middle" fill="#fff" font-size="30" font-weight="bold">2x1</text>
+
+    <rect x="285" y="760" width="235" height="120" fill="#F1A208"/>
+    <text x="402" y="800" text-anchor="middle" fill="#fff" font-weight="bold">-30% Sushi para dos</text>
+    <text x="402" y="850" text-anchor="middle" fill="#fff" font-size="30" font-weight="bold">-30%</text>
+
+    <rect x="530" y="760" width="235" height="120" fill="#2A9D8F"/>
+    <text x="647" y="800" text-anchor="middle" fill="#fff" font-weight="bold">Combo Burger</text>
+    <text x="647" y="850" text-anchor="middle" fill="#fff" font-size="30" font-weight="bold">$5</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="20" y="920" width="760" height="60" fill="#1D1D1D"/>
+  <text x="400" y="955" text-anchor="middle" fill="#fff">Sobre nosotros · Contacto · Términos · Redes sociales · &#169; 2026 SABORYA</text>
+</svg>

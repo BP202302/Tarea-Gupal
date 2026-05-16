@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SABORYA — Plataforma de pedidos de comida en línea, ofertas, reservas y listado de restaurantes." />
+  <title>SABORYA — Pide tu comida favorita en línea</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">SABOR<span>YA</span></a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="pages/restaurantes.html">Restaurantes</a></li>
+          <li><a href="pages/menu.html">Menú</a></li>
+          <li><a href="pages/ofertas.html">Ofertas</a></li>
+          <li><a href="pages/reservas.html">Reservas</a></li>
+          <li><a href="pages/pedido.html">Pedido</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+          <input type="search" placeholder="Buscar comida..." aria-label="Buscar" />
+          <button type="submit">Buscar</button>
+        </form>
+        <a href="pages/compras.html" class="btn btn-outline">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Pide tu comida favorita en minutos</h1>
+      <p>Descubre los mejores restaurantes de tu ciudad, aprovecha ofertas exclusivas y reserva tu mesa desde un solo lugar.</p>
+      <a href="pages/menu.html" class="btn btn-secondary">Ver menú</a>
+      <a href="pages/restaurantes.html" class="btn btn-outline" style="background:white;">Ver restaurantes</a>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <section class="section">
+        <h2 class="section-title">Categorías</h2>
+        <div class="grid grid-cats">
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🍕</div>
+            <div class="cat-name">Pizza</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🍔</div>
+            <div class="cat-name">Hamburguesas</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🍣</div>
+            <div class="cat-name">Sushi</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🥗</div>
+            <div class="cat-name">Saludable</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🍝</div>
+            <div class="cat-name">Pasta</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🌮</div>
+            <div class="cat-name">Mexicana</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🍰</div>
+            <div class="cat-name">Postres</div>
+          </a>
+          <a href="pages/menu.html" class="cat">
+            <div class="cat-icon">🥤</div>
+            <div class="cat-name">Bebidas</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Restaurantes destacados</h2>
+        <div class="grid grid-cards">
+          <article class="card">
+            <div class="card-img" style="background-color:#FFE0B2;">🍕</div>
+            <div class="card-body">
+              <div class="card-title">Pizzería Luna</div>
+              <div class="card-meta">★ 4.8 · Italiana · 25–35 min</div>
+              <div class="card-meta">Envío $1.50</div>
+            </div>
+            <div class="card-foot">
+              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#FFCDD2;">🍔</div>
+            <div class="card-body">
+              <div class="card-title">Burger House</div>
+              <div class="card-meta">★ 4.6 · Hamburguesas · 20–30 min</div>
+              <div class="card-meta">Envío gratis</div>
+            </div>
+            <div class="card-foot">
+              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#C8E6C9;">🍣</div>
+            <div class="card-body">
+              <div class="card-title">Sushi Ko</div>
+              <div class="card-meta">★ 4.9 · Japonesa · 30–40 min</div>
+              <div class="card-meta">Envío $2.00</div>
+            </div>
+            <div class="card-foot">
+              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#FFF9C4;">🌮</div>
+            <div class="card-body">
+              <div class="card-title">Tacos El Patrón</div>
+              <div class="card-meta">★ 4.5 · Mexicana · 20–25 min</div>
+              <div class="card-meta">Envío $1.00</div>
+            </div>
+            <div class="card-foot">
+              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Ofertas del día</h2>
+        <div class="grid grid-offers">
+          <div class="offer-card">
+            <span class="badge badge-offer">2x1</span>
+            <h3>Pizza familiar</h3>
+            <p>Lleva 2 pizzas familiares al precio de 1. Aplica solo hoy.</p>
+            <div class="discount">2x1</div>
+            <a href="pages/ofertas.html" class="btn">Aprovechar</a>
+          </div>
+          <div class="offer-card">
+            <span class="badge badge-offer">-30 %</span>
+            <h3>Sushi para dos</h3>
+            <p>Descuento del 30 % en combos para compartir.</p>
+            <div class="discount">-30%</div>
+            <a href="pages/ofertas.html" class="btn">Aprovechar</a>
+          </div>
+          <div class="offer-card">
+            <span class="badge badge-offer">$5</span>
+            <h3>Combo burger</h3>
+            <p>Hamburguesa + papas + bebida por solo $5.</p>
+            <div class="discount">$5</div>
+            <a href="pages/ofertas.html" class="btn">Aprovechar</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <h4>SABORYA</h4>
+          <p>Plataforma de pedidos, reservas y ofertas de restaurantes.</p>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="pages/restaurantes.html">Restaurantes</a></li>
+            <li><a href="pages/menu.html">Menú</a></li>
+            <li><a href="pages/ofertas.html">Ofertas</a></li>
+            <li><a href="pages/reservas.html">Reservas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 SABORYA. Proyecto académico — Diseño de la plataforma WEB.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

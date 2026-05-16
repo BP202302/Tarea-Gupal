@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compra en línea — SABORYA</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">SABOR<span>YA</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="restaurantes.html">Restaurantes</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="pedido.html">Pedido</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <h2 class="section-title">Finalizar compra</h2>
+
+        <div class="info-grid">
+          <form class="form" style="max-width:none;" onsubmit="event.preventDefault(); alert('Funcionalidad de pago disponible en la entrega final con Spring Boot.');">
+            <h3 style="margin-bottom:1rem;">Datos del cliente</h3>
+
+            <div class="form-row two-cols">
+              <div>
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-input" id="nombre" type="text" required />
+              </div>
+              <div>
+                <label class="form-label" for="apellido">Apellido</label>
+                <input class="form-input" id="apellido" type="text" required />
+              </div>
+            </div>
+
+            <div class="form-row two-cols">
+              <div>
+                <label class="form-label" for="email">Correo</label>
+                <input class="form-input" id="email" type="email" required />
+              </div>
+              <div>
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input class="form-input" id="telefono" type="tel" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="direccion">Dirección de entrega</label>
+              <input class="form-input" id="direccion" type="text" required placeholder="Calle, número, referencia" />
+            </div>
+
+            <h3 style="margin:1rem 0;">Método de pago</h3>
+
+            <div class="form-row">
+              <label><input type="radio" name="pago" value="tarjeta" checked /> Tarjeta de crédito / débito</label><br />
+              <label><input type="radio" name="pago" value="transferencia" /> Transferencia bancaria</label><br />
+              <label><input type="radio" name="pago" value="efectivo" /> Pago contra entrega (efectivo)</label>
+            </div>
+
+            <div class="form-row two-cols">
+              <div>
+                <label class="form-label" for="numtarjeta">Número de tarjeta</label>
+                <input class="form-input" id="numtarjeta" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" />
+              </div>
+              <div>
+                <label class="form-label" for="vence">Vence (MM/AA)</label>
+                <input class="form-input" id="vence" type="text" placeholder="12/29" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Confirmar y pagar</button>
+          </form>
+
+          <aside class="info-box">
+            <h3>Resumen</h3>
+            <p>Subtotal: <strong>$24.50</strong></p>
+            <p>Envío: <strong>$1.50</strong></p>
+            <hr style="margin:0.75rem 0;" />
+            <p style="font-size:1.2rem;">Total: <strong style="color:var(--color-primary);">$26.00</strong></p>
+            <a href="pedido.html" class="btn btn-outline btn-block" style="margin-top:1rem;">Editar pedido</a>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 SABORYA. Proyecto académico — Diseño de la plataforma WEB.</div>
+    </div>
+  </footer>
+</body>
+</html>

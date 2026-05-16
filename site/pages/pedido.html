@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedido — SABORYA</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">SABOR<span>YA</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="restaurantes.html">Restaurantes</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="pedido.html" class="active">Pedido</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <h2 class="section-title">Tu pedido</h2>
+
+        <table class="cart-table" aria-label="Detalle del carrito">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio unit.</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pizza Margarita</td>
+              <td>1</td>
+              <td>$8.50</td>
+              <td>$8.50</td>
+            </tr>
+            <tr>
+              <td>Burger Clásica</td>
+              <td>2</td>
+              <td>$6.00</td>
+              <td>$12.00</td>
+            </tr>
+            <tr>
+              <td>Limonada natural</td>
+              <td>2</td>
+              <td>$2.00</td>
+              <td>$4.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Subtotal</td>
+              <td>$24.50</td>
+            </tr>
+            <tr>
+              <td colspan="3">Envío</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cart-total">TOTAL</td>
+              <td class="cart-total">$26.00</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap; justify-content:flex-end;">
+          <a href="menu.html" class="btn btn-outline">Seguir pidiendo</a>
+          <a href="compras.html" class="btn btn-primary">Ir a pagar</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 SABORYA. Proyecto académico — Diseño de la plataforma WEB.</div>
+    </div>
+  </footer>
+</body>
+</html>
