@@ -56,12 +56,18 @@ Proyecto académico de la asignatura **Diseño de la plataforma WEB**.
 
 ## IDE utilizado
 
-El proyecto se desarrolla en **Apache NetBeans**. Para abrirlo:
+El proyecto se desarrolla en **Apache NetBeans 8.2** y es compatible con versiones posteriores. Está configurado como **proyecto HTML5/JS** (carpeta `nbproject/`).
 
-1. Abrir NetBeans → **File → Open Project / Open File**.
-2. Seleccionar la carpeta `Tarea-Gupal/`.
-3. Para visualizar el sitio: clic derecho sobre `site/index.html` → **Run File** (se abrirá en el navegador) o usar el visor HTML integrado de NetBeans.
-4. Git está integrado vía **Team → Git** dentro de NetBeans.
+Para abrirlo:
+
+1. Abrir NetBeans 8.2 → **File → Open Project...** (NO "Open File").
+2. Navegar hasta la carpeta `Tarea-Gupal/` — debe aparecer el ícono naranja de proyecto HTML5.
+3. Seleccionarla y pulsar **Open Project**.
+4. Una vez cargado el proyecto se mostrará en el panel "Projects" con el nombre **SABORYA**.
+5. Para ejecutar: clic derecho sobre el proyecto → **Run** (lanzará `index.html` en el navegador integrado de Chrome).
+6. Git está integrado vía **Team → Git** dentro de NetBeans.
+
+> Si NetBeans 8.2 no muestra el navegador integrado de Chrome, instalá la extensión "NetBeans Connector" en Chrome, o cambiá el navegador en **Properties → Run → Browser**.
 
 ---
 
