@@ -1,7 +1,7 @@
-# PRIMERA ENTREGA — PROYECTO "SABORYA"
+# PRIMERA ENTREGA — PROYECTO "GASOYA"
 
 **Asignatura:** Diseño de la plataforma WEB
-**Temática:** Comidas (Pedidos, Ofertas, Reservas, Listado de restaurantes, Compras en línea)
+**Temática:** Combustibles (Precios, Ubicaciones, Horarios, Ofertas)
 **Modalidad:** Trabajo grupal (máximo 3 estudiantes)
 **Tipo de entrega:** Primera entrega
 
@@ -18,11 +18,11 @@
               DISEÑO DE LA PLATAFORMA WEB
 
                   PROYECTO INTEGRADOR:
-        "SABORYA — Plataforma web de pedidos de comida
-         en línea, ofertas, reservas y listado
-         de restaurantes."
+        "GASOYA — Plataforma web de consulta de precios
+         de combustible, ubicaciones de gasolineras,
+         horarios y ofertas en línea."
 
-                    TEMÁTICA: COMIDAS
+                 TEMÁTICA: COMBUSTIBLES
 
                     PRIMERA ENTREGA
 
@@ -39,7 +39,7 @@
 ══════════════════════════════════════════════════════════════════
 ```
 
-> *Nota: completar los datos personales antes de imprimir o exportar el documento a PDF.*
+> *Completar datos personales antes de exportar a PDF.*
 
 ---
 
@@ -65,45 +65,41 @@
 
 ### 3.1 Objetivo General
 
-Diseñar e implementar una plataforma web denominada **SABORYA**, basada en HTML, CSS y posteriormente en **Java Spring Boot + MySQL**, que permita a los usuarios consultar restaurantes, realizar pedidos en línea, reservar mesas y aprovechar ofertas, de manera clara, organizada y accesible desde cualquier dispositivo.
+Diseñar e implementar una plataforma web denominada **GASOYA**, basada en HTML, CSS y posteriormente en **Java Spring Boot + MySQL**, que permita a los conductores y ciudadanos consultar en tiempo real los precios de combustible, ubicar gasolineras cercanas, conocer sus horarios y acceder a ofertas y promociones, de manera clara, organizada y accesible desde cualquier dispositivo.
 
 ### 3.2 Objetivos Específicos
 
-1. Definir la estructura de almacenamiento más idónea para la información de restaurantes, productos, pedidos, reservas y usuarios mediante una base de datos relacional MySQL.
-2. Diseñar una interfaz gráfica amigable e intuitiva que facilite la navegación del usuario final (cliente del restaurante) en cualquier dispositivo.
-3. Organizar la información mediante un **mapa de sitio** y **wireframes** que sirvan de base al desarrollo posterior con Java Spring Boot.
-4. Implementar la estructura HTML, CSS e imágenes que servirán como base para el sitio dinámico de la segunda entrega.
-5. Justificar la utilidad social y comercial del proyecto, así como planificar las fases de desarrollo hasta la entrega final.
+1. Definir la estructura de almacenamiento más idónea para la información de gasolineras, tipos de combustible, precios, horarios y ofertas mediante una base de datos relacional MySQL.
+2. Diseñar una interfaz gráfica intuitiva y responsive que permita al usuario encontrar la información de combustible que necesita en el menor número de clics posible.
+3. Organizar la información mediante un **mapa de sitio** y **wireframes** que sirvan de base al desarrollo dinámico con Java Spring Boot en la entrega final.
+4. Implementar la estructura HTML5, CSS3 y carpetas de imágenes que conformarán el sitio estático base.
+5. Justificar la utilidad social, ambiental y económica del proyecto, y planificar las fases de desarrollo hasta la entrega final.
 
 ---
 
 ## 4. DEFINICIÓN DEL PROYECTO
 
-**SABORYA** es una plataforma web orientada al sector de **comidas y restaurantes**. La plataforma centraliza en un solo sitio los servicios que típicamente ofrecen las cadenas y restaurantes independientes, permitiendo que el usuario:
+**GASOYA** es una plataforma web orientada al sector de **combustibles y gasolineras**. Centraliza en un solo sitio la información que los conductores necesitan antes y durante el reabastecimiento de su vehículo:
 
-- Consulte un **listado de restaurantes** afiliados, con su carta, horario, ubicación y calificación.
-- Realice **pedidos en línea** (delivery o retiro en local) seleccionando platos individuales o combos.
-- Acceda a **ofertas y promociones** vigentes por restaurante o por categoría.
-- Realice **reservas de mesa** indicando fecha, hora y número de personas.
-- Efectúe **compras en línea** pagando con distintos métodos (tarjeta, transferencia, pago en local).
+- Consultar **precios actualizados** de gasolina extra, súper y diésel por gasolinera y zona.
+- Localizar **gasolineras cercanas** con mapa interactivo, distancia y calificación de usuarios.
+- Revisar **horarios de atención** de cada estación de servicio.
+- Acceder a **ofertas y promociones** vigentes (descuentos, puntos de fidelidad, combos de servicio).
 
 ### 4.1 Público objetivo
 
-- Personas entre 18 y 55 años con acceso a internet, que buscan ahorrar tiempo al pedir comida o reservar.
-- Empleados de oficina, estudiantes universitarios y familias.
-- Restaurantes pequeños y medianos que necesitan visibilidad digital sin contratar un desarrollo a la medida.
+- Conductores de vehículos particulares que buscan el mejor precio de combustible antes de tanquear.
+- Transportistas y flotas empresariales que necesitan optimizar costos de combustible.
+- Ciudadanos en general que requieren saber si una gasolinera está abierta o tiene algún producto disponible.
 
-### 4.2 Alcance
+### 4.2 Alcance de la Primera Entrega
 
-Para la **Primera Entrega** el proyecto comprende:
-
-- Diseño de la estructura de información (mapa de sitio).
-- Wireframes (diseño de alambre) de las pantallas principales.
+- Diseño del mapa de sitio y wireframes.
 - Sitio web **estático** en HTML5 + CSS3 con todas las páginas navegables.
 - Estructura organizada de imágenes y hojas de estilo.
 - Documentación de justificación y planificación.
 
-La parte dinámica (formularios funcionales, Java Spring Boot, MySQL, autenticación, manual de uso y publicación en hosting) corresponde a la **Entrega Final**.
+La parte dinámica (formularios funcionales con Java Spring Boot, base de datos MySQL, autenticación, geolocalización y publicación en hosting) corresponde a la **Entrega Final**.
 
 ---
 
@@ -117,121 +113,109 @@ La parte dinámica (formularios funcionales, Java Spring Boot, MySQL, autenticac
                               │   (index.html)      │
                               └──────────┬──────────┘
                                          │
-   ┌─────────────┬──────────────┬────────┼────────┬──────────────┬──────────────┐
-   │             │              │        │        │              │              │
-┌──▼───┐   ┌─────▼──────┐  ┌────▼────┐ ┌─▼────┐ ┌─▼────────┐ ┌───▼──────┐ ┌─────▼─────┐
-│Restau│   │   Menú /   │  │ Ofertas │ │Pedido│ │ Reservas │ │ Compras  │ │  Contacto │
-│rantes│   │  Productos │  │         │ │      │ │          │ │ en línea │ │           │
-└──┬───┘   └─────┬──────┘  └────┬────┘ └──┬───┘ └────┬─────┘ └────┬─────┘ └───────────┘
-   │             │              │         │          │            │
-   │       ┌─────▼──────┐       │   ┌─────▼──────┐   │      ┌─────▼──────┐
-   │       │  Detalle   │       │   │  Carrito   │   │      │  Checkout  │
-   │       │   plato    │       │   │            │   │      │   /Pago    │
-   │       └────────────┘       │   └─────┬──────┘   │      └────────────┘
-   │                            │         │          │
-┌──▼──────────┐                 │   ┌─────▼──────┐   │
-│  Detalle de │                 │   │ Confirmac. │   │
-│ restaurante │                 │   │  pedido    │   │
-└─────────────┘                 │   └────────────┘   │
-                                │                    │
-                                │              ┌─────▼──────┐
-                                │              │ Confirmac. │
-                                │              │  reserva   │
-                                │              └────────────┘
-                                │
-                          ┌─────▼─────┐
-                          │  Cupones  │
-                          └───────────┘
+   ┌─────────────┬──────────────┬────────┼────────┬──────────────┬────────────┐
+   │             │              │        │        │              │            │
+┌──▼────────┐ ┌──▼──────────┐ ┌─▼──────┐ ┌─▼────┐ ┌─▼────────┐ ┌─▼────────┐ ┌─▼────────┐
+│ Gasolineras│ │  Precios   │ │Horarios│ │Ofertas│ │Calculadora│ │Contacto  │ │Acerca de │
+│(Ubicaciones│ │            │ │        │ │       │ │           │ │          │ │          │
+└──┬─────────┘ └──┬─────────┘ └────────┘ └──┬───┘ └───────────┘ └──────────┘ └──────────┘
+   │              │                          │
+   │        ┌─────▼──────┐             ┌─────▼──────┐
+   │        │ Histórico  │             │  Cupones   │
+   │        │ de precios │             │            │
+   │        └────────────┘             └────────────┘
+   │
+┌──▼──────────┐
+│  Detalle de │
+│ gasolinera  │
+│(mapa+serv.) │
+└─────────────┘
 
-      ┌──────── Zona de Usuario (transversal) ────────┐
-      │   • Iniciar sesión   • Registro   • Mi cuenta │
-      │   • Mis pedidos      • Mis reservas           │
-      └────────────────────────────────────────────────┘
+      ┌──────── Zona de Usuario (transversal) ────────────┐
+      │  • Iniciar sesión   • Registro   • Mi cuenta      │
+      │  • Gasolineras favoritas   • Alertas de precio    │
+      └───────────────────────────────────────────────────┘
 ```
 
-### 5.2 Secciones principales del sitio
+### 5.2 Secciones principales
 
 | Sección | Descripción funcional |
 |---------|----------------------|
-| **Inicio** | Página de bienvenida con banner, restaurantes destacados, categorías y ofertas del día. |
-| **Restaurantes** | Listado filtrable por categoría, ubicación y calificación. |
-| **Menú / Productos** | Catálogo de platos con buscador, filtros, fotos y precios. |
-| **Ofertas** | Promociones vigentes, cupones, combos y descuentos. |
-| **Pedidos** | Carrito de compras, cantidades, dirección de envío. |
-| **Reservas** | Formulario de reserva con fecha, hora y cantidad de personas. |
-| **Compras en línea** | Checkout con datos del cliente y método de pago. |
+| **Inicio** | Banner, buscador de gasolineras por zona, precios del día, noticias de combustible. |
+| **Gasolineras** | Listado filtrable por marca, tipo de combustible, servicio y zona. |
+| **Precios** | Tabla comparativa de precios: Extra, Súper, Diésel, Gas Natural. |
+| **Horarios** | Consulta de horarios por estación; filtro de gasolineras abiertas ahora. |
+| **Ofertas** | Promociones vigentes, cupones de descuento y programas de fidelidad. |
+| **Calculadora** | Calcula el costo de llenar el tanque según el precio actual. |
 | **Contacto** | Datos de la empresa, formulario y mapa. |
-| **Mi cuenta** | Acceso a historial de pedidos y reservas (segunda entrega). |
 
 ---
 
 ## 6. INTERFAZ GRÁFICA — DISEÑO DE ALAMBRE (WIREFRAMES)
 
-Los wireframes de baja fidelidad se encuentran en formato SVG dentro de la carpeta `wireframes/` del repositorio:
+Los wireframes de baja fidelidad se encuentran en formato SVG en la carpeta `wireframes/`:
 
 | Wireframe | Archivo |
 |-----------|---------|
 | Página de Inicio | `wireframes/wf-01-inicio.svg` |
-| Listado de Restaurantes | `wireframes/wf-02-restaurantes.svg` |
-| Menú / Productos | `wireframes/wf-03-menu.svg` |
-| Reservas | `wireframes/wf-04-reservas.svg` |
-| Pedido / Carrito | `wireframes/wf-05-pedido.svg` |
+| Gasolineras / Ubicaciones | `wireframes/wf-02-gasolineras.svg` |
+| Precios | `wireframes/wf-03-precios.svg` |
+| Horarios | `wireframes/wf-04-horarios.svg` |
+| Ofertas | `wireframes/wf-05-ofertas.svg` |
 
 ### 6.1 Descripción visual (Inicio)
 
 ```
-┌────────────────────────────────────────────────────────────────┐
-│ LOGO SABORYA   [Inicio] [Restaurantes] [Menú] [Ofertas] [...]  │  ← Header
-│                                  [ 🔍 Buscar... ] [Iniciar S.] │
-├────────────────────────────────────────────────────────────────┤
-│                                                                │
-│              ████  BANNER PRINCIPAL  ████                      │
-│              "Pide tu comida favorita en minutos"              │
-│                       [ Pedir ahora ]                          │
-│                                                                │
-├────────────────────────────────────────────────────────────────┤
-│  Categorías:  🍕 Pizza  🍔 Burgers  🍣 Sushi  🥗 Saludable     │
-├────────────────────────────────────────────────────────────────┤
-│  Restaurantes destacados                                       │
-│  ┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐                        │
-│  │ IMG  │  │ IMG  │  │ IMG  │  │ IMG  │                        │
-│  │ Nom. │  │ Nom. │  │ Nom. │  │ Nom. │                        │
-│  └──────┘  └──────┘  └──────┘  └──────┘                        │
-├────────────────────────────────────────────────────────────────┤
-│  Ofertas del día                                               │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐                        │
-│  │ 2x1 PIZZA│ │ -30% SUSHI│ │ COMBO 5$│                        │
-│  └──────────┘ └──────────┘ └──────────┘                        │
-├────────────────────────────────────────────────────────────────┤
-│ Footer:  Sobre nosotros | Contacto | Términos | Redes sociales │
-└────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│ ⛽ GASOYA   [Inicio][Gasolineras][Precios][Horarios][Ofertas][…] │  ← Header
+│                        [ 🔍 Buscar gasolinera o ciudad… ]        │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│           ████  BANNER — "¿A cuánto está la gasolina?"  ████     │
+│                   [ Consultar precios ]  [ Encontrar gasolinera ]│
+│                                                                  │
+├──────────────────────────────────────────────────────────────────┤
+│  Precios del día:  Extra $X.XX | Súper $X.XX | Diésel $X.XX     │
+├──────────────────────────────────────────────────────────────────┤
+│  Gasolineras destacadas (mejor precio / más cercanas)            │
+│  ┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐                          │
+│  │ IMG  │  │ IMG  │  │ IMG  │  │ IMG  │                          │
+│  │ Nom. │  │ Nom. │  │ Nom. │  │ Nom. │                          │
+│  └──────┘  └──────┘  └──────┘  └──────┘                          │
+├──────────────────────────────────────────────────────────────────┤
+│  Ofertas del día                                                 │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐                        │
+│  │ -$0.05/gal│ │ 2x lavado│ │ Puntos x2│                        │
+│  └──────────┘  └──────────┘  └──────────┘                        │
+├──────────────────────────────────────────────────────────────────┤
+│ Footer:  Sobre nosotros | Contacto | Términos | Redes sociales   │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## 7. CREACIÓN DEL SITIO HTML
 
-Se desarrolló la estructura HTML5 estática con las siguientes páginas, todas enlazadas entre sí siguiendo el mapa de sitio:
+Estructura de páginas HTML5 estáticas, todas enlazadas entre sí:
 
 ```
 site/
 ├── index.html                  ← Página de inicio
 └── pages/
-    ├── restaurantes.html       ← Listado de restaurantes
-    ├── menu.html               ← Catálogo de platos
+    ├── gasolineras.html        ← Listado y ubicaciones de gasolineras
+    ├── precios.html            ← Tabla comparativa de precios
+    ├── horarios.html           ← Horarios de atención
     ├── ofertas.html            ← Ofertas y promociones
-    ├── pedido.html             ← Carrito / pedido
-    ├── reservas.html           ← Formulario de reserva
-    ├── compras.html            ← Compra en línea / checkout
+    ├── calculadora.html        ← Calculadora de costo de tanqueo
     └── contacto.html           ← Contacto
 ```
 
 ### 7.1 Principios aplicados
 
-- HTML5 **semántico** (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-- Compatibilidad **responsive** mediante `<meta name="viewport">`.
-- Codificación UTF-8 para soportar correctamente acentos y caracteres especiales.
-- Estructura repetida (header / footer) para facilitar la conversión posterior a plantillas Thymeleaf en la entrega final.
+- HTML5 semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- Diseño **responsive** con `<meta name="viewport">` para móviles y tablets.
+- Codificación UTF-8.
+- Estructura replicable a plantillas **Thymeleaf** para la entrega final con Spring Boot.
 
 ---
 
@@ -239,15 +223,15 @@ site/
 
 ```
 site/img/
-├── logo/         ← Logotipo principal y variaciones
+├── logo/         ← Logotipo principal de GASOYA
 │   └── README.txt
-├── banners/      ← Imágenes grandes para hero / portada
+├── banners/      ← Imágenes hero / cabecera de sección
 │   └── README.txt
-├── platos/       ← Fotografías de platos del catálogo
+├── estaciones/   ← Fotos y logos de cada gasolinera
 │   └── README.txt
-├── restaurantes/ ← Portadas y logos de cada restaurante
+├── mapas/        ← Capturas o recursos de mapas / íconos de pin
 │   └── README.txt
-└── iconos/       ← Íconos de categorías, redes sociales, UI
+└── iconos/       ← Íconos de tipos de combustible, servicios, UI
     └── README.txt
 ```
 
@@ -256,12 +240,10 @@ site/img/
 | Tipo | Patrón | Ejemplo |
 |------|--------|---------|
 | Logo | `logo-<variante>.svg` | `logo-principal.svg` |
-| Banner | `banner-<seccion>-<n>.jpg` | `banner-inicio-1.jpg` |
-| Plato | `plato-<categoria>-<n>.jpg` | `plato-pizza-01.jpg` |
-| Restaurante | `rest-<slug>.jpg` | `rest-pizzeria-luna.jpg` |
-| Ícono | `ico-<accion>.svg` | `ico-carrito.svg` |
-
-Se prefieren formatos **SVG** para logos e íconos (escalables) y **JPG/WebP** comprimidos para fotografías.
+| Banner | `banner-<seccion>.jpg` | `banner-inicio.jpg` |
+| Estación | `est-<slug>.jpg` | `est-petroecuador-norte.jpg` |
+| Mapa | `mapa-<zona>.png` | `mapa-quito-norte.png` |
+| Ícono | `ico-<nombre>.svg` | `ico-extra.svg`, `ico-diesel.svg` |
 
 ---
 
@@ -269,48 +251,48 @@ Se prefieren formatos **SVG** para logos e íconos (escalables) y **JPG/WebP** c
 
 ```
 site/css/
-├── base.css         ← Reset, variables, tipografía
+├── base.css         ← Reset, variables CSS, tipografía
 ├── layout.css       ← Header, footer, grid, contenedores
-├── components.css   ← Botones, tarjetas, formularios
+├── components.css   ← Botones, tarjetas, tablas, formularios
 └── pages.css        ← Estilos específicos por página
 ```
 
-### 9.1 Metodología
-
-Se aplica una metodología tipo **BEM ligero** y **variables CSS** (`:root`) para colores y tipografías, lo que permite mantener una identidad visual consistente y facilita los ajustes posteriores.
-
-### 9.2 Paleta de colores
+### 9.1 Paleta de colores
 
 | Rol | Variable | Color |
 |------|----------|-------|
-| Primario | `--color-primary` | `#E63946` (rojo apetitoso) |
-| Secundario | `--color-secondary` | `#F1A208` (mostaza) |
-| Fondo claro | `--color-bg` | `#FFF8F0` |
-| Texto | `--color-text` | `#1D1D1D` |
-| Acento | `--color-accent` | `#2A9D8F` |
+| Primario | `--color-primary` | `#F77F00` (naranja energía) |
+| Secundario | `--color-secondary` | `#1B2A41` (azul marino profundo) |
+| Fondo claro | `--color-bg` | `#F4F6F9` |
+| Texto | `--color-text` | `#1A1A1A` |
+| Acento / éxito | `--color-accent` | `#2EC4B6` (verde-azul) |
+| Peligro / extra | `--color-danger` | `#E63946` |
+
+### 9.2 Metodología
+
+Variables CSS en `:root`, nomenclatura tipo BEM ligero, diseño mobile-first con `@media (max-width: 720px)`.
 
 ---
 
 ## 10. JUSTIFICACIÓN DEL PROYECTO
 
-En la actualidad, el consumo de comida a través de plataformas digitales ha crecido de forma sostenida. Sin embargo, **muchos restaurantes pequeños y medianos no cuentan con presencia digital propia** y dependen totalmente de aplicaciones de terceros que cobran comisiones elevadas.
-
-**SABORYA** se justifica desde tres dimensiones:
-
 ### 10.1 Dimensión social
 
-- Facilita a personas con poca disponibilidad de tiempo (trabajadores, estudiantes, adultos mayores) el acceso a alimentos preparados sin necesidad de desplazarse.
-- Permite a usuarios con limitaciones de movilidad realizar pedidos y reservas desde casa.
+El precio del combustible afecta directamente el costo de vida de millones de familias y negocios. **GASOYA** democratiza el acceso a esta información: cualquier persona con un celular puede comparar precios antes de tanquear y tomar la mejor decisión sin depender de terceros ni datos desactualizados.
 
-### 10.2 Dimensión tecnológica
+### 10.2 Dimensión económica
 
-- Aplica buenas prácticas de **diseño web responsive** y **arquitectura cliente-servidor** con Java Spring Boot y MySQL en la siguiente fase.
-- Pone en práctica los conocimientos de **HTML, CSS, modelado entidad-relación, formularios y conexión a base de datos** vistos en la asignatura.
+- Los conductores pueden ahorrar dinero al elegir la gasolinera con el mejor precio por galón.
+- Las flotas de transporte y empresas logísticas pueden optimizar sus rutas y costos de combustible.
+- Las gasolineras locales obtienen visibilidad digital sin necesidad de contratar desarrollo web propio.
 
-### 10.3 Dimensión económica
+### 10.3 Dimensión ambiental
 
-- Brinda a restaurantes locales una vitrina digital de bajo costo.
-- Centraliza pedidos, reservas y ofertas, reduciendo errores manuales y mejorando la experiencia del cliente.
+Al optimizar rutas hacia gasolineras cercanas y abiertas, se reduce el consumo innecesario de combustible buscando una estación, contribuyendo a menor emisión de gases contaminantes.
+
+### 10.4 Dimensión tecnológica
+
+El proyecto aplica buenas prácticas de diseño web responsive, arquitectura MVC con Java Spring Boot, modelo entidad-relación en MySQL, y versionamiento con Git/GitHub, integrando los conocimientos del eje de la asignatura.
 
 ---
 
@@ -323,7 +305,7 @@ En la actualidad, el consumo de comida a través de plataformas digitales ha cre
 | 1 | Definición de tema y alcance | 1 semana | Entrega 1 |
 | 2 | Mapa de sitio y wireframes | 1 semana | Entrega 1 |
 | 3 | Maquetación HTML + CSS estática | 2 semanas | Entrega 1 |
-| 4 | Justificación, planificación, documentación | 1 semana | Entrega 1 |
+| 4 | Justificación, planificación y documentación | 1 semana | Entrega 1 |
 | 5 | Diseño de base de datos (MER) | 1 semana | Entrega Final |
 | 6 | Desarrollo Spring Boot + MySQL | 3 semanas | Entrega Final |
 | 7 | Formularios dinámicos y validaciones | 1 semana | Entrega Final |
@@ -331,41 +313,41 @@ En la actualidad, el consumo de comida a través de plataformas digitales ha cre
 | 9 | Manual de uso y conclusiones | 0.5 semanas | Entrega Final |
 | 10 | Publicación en hosting y GitHub | 0.5 semanas | Entrega Final |
 
-### 11.2 Distribución de roles del grupo
+### 11.2 Distribución de roles
 
 | Rol | Responsable | Funciones |
 |-----|-------------|-----------|
 | Líder de proyecto | Integrante 1 | Coordinación, documentación, evaluaciones |
 | Desarrollo Front-End | Integrante 2 | HTML, CSS, wireframes, imágenes |
-| Desarrollo Back-End | Integrante 3 | Java Spring Boot, MySQL, modelo entidad-relación |
+| Desarrollo Back-End | Integrante 3 | Java Spring Boot, MySQL, MER |
 
-### 11.3 Recursos / Herramientas
+### 11.3 Herramientas
 
-- **IDE principal:** **Apache NetBeans** (utilizado para todo el desarrollo del proyecto, tanto la maquetación HTML/CSS como el back-end Java Spring Boot de la entrega final).
-- **Maquetación:** HTML5, CSS3 (editados desde NetBeans).
-- **Back-End (entrega final):** Java 17, Spring Boot, Thymeleaf, ejecutado y depurado desde NetBeans.
-- **Base de Datos:** MySQL 8 (servidor local).
-- **Versionamiento:** Git + GitHub (repositorio `bp202302/tarea-gupal`), integrado en NetBeans mediante su soporte Git nativo.
-- **Diseño de wireframes:** SVG.
+- **IDE:** Apache NetBeans 8.2 (Java 8).
+- **Front-End:** HTML5, CSS3.
+- **Back-End (entrega final):** Java 8, Spring Boot 2.7.x, Thymeleaf.
+- **Base de Datos:** MySQL 8, diseñado desde NetBeans y MySQL Workbench.
+- **Versionamiento:** Git + GitHub (`bp202302/tarea-gupal`), integrado en NetBeans vía Team → Git.
+- **Wireframes:** SVG.
 
 ### 11.4 Porcentaje de avance — Primera Entrega
 
 | Componente | Avance |
 |------------|--------|
 | Documentación (puntos 1–6, 10, 11) | 100 % |
-| Sitio HTML estático | 100 % |
+| Sitio HTML estático (7 páginas) | 100 % |
 | Estructura de imágenes | 100 % |
-| Estructura de CSS | 100 % |
-| Wireframes | 100 % |
-| Base de datos (MER) | 0 % (Entrega final) |
-| Lógica Spring Boot | 0 % (Entrega final) |
-| **AVANCE TOTAL DEL PROYECTO** | **≈ 55 %** |
+| Estructura CSS (4 archivos) | 100 % |
+| Wireframes (5 pantallas) | 100 % |
+| Modelo Entidad-Relación | 0 % (Entrega Final) |
+| Lógica Spring Boot + MySQL | 0 % (Entrega Final) |
+| **AVANCE TOTAL DEL PROYECTO** | **≈ 50 %** |
 
-### 11.5 Autoevaluación, evaluación al líder y entre integrantes
+### 11.5 Autoevaluación y evaluaciones cruzadas
 
-Estas matrices se entregarán **firmadas por cada integrante** junto al documento individual el día de la evaluación, conforme lo solicita la guía:
+Se entregará firmado el día de la evaluación (una por integrante):
 
-- Autoevaluación (1 por integrante).
+- Autoevaluación individual.
 - Evaluación al líder de grupo.
 - Evaluación entre integrantes.
 

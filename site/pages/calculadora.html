@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora — GASOYA</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">GAS<span>OYA</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="gasolineras.html">Gasolineras</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="horarios.html">Horarios</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="calculadora.html" class="active">Calculadora</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <h2 class="section-title">Calculadora de tanqueo</h2>
+        <p style="text-align:center;">Ingresa los datos de tu vehículo y el tipo de combustible para saber cuánto pagarás al tanquear.</p>
+
+        <div class="calc-box">
+          <div class="form-row">
+            <label class="form-label" for="tipo">Tipo de combustible</label>
+            <select class="form-select" id="tipo">
+              <option value="2.40">Gasolina Extra — $2.40/gal</option>
+              <option value="3.10">Gasolina Súper — $3.10/gal</option>
+              <option value="1.90">Diésel — $1.90/gal</option>
+              <option value="1.50">Gas Natural — $1.50/gal</option>
+            </select>
+          </div>
+
+          <div class="form-row two-cols">
+            <div>
+              <label class="form-label" for="capacidad">Capacidad del tanque (gal)</label>
+              <input class="form-input" id="capacidad" type="number" min="1" max="100" value="12" />
+            </div>
+            <div>
+              <label class="form-label" for="nivel">Nivel actual del tanque (%)</label>
+              <input class="form-input" id="nivel" type="number" min="0" max="100" value="20" />
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="button" onclick="calcular()">Calcular costo</button>
+
+          <div class="calc-result" id="resultado"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 GASOYA. Proyecto académico — Diseño de la plataforma WEB.</div>
+    </div>
+  </footer>
+
+  <script>
+    function calcular() {
+      var precio    = parseFloat(document.getElementById('tipo').value);
+      var capacidad = parseFloat(document.getElementById('capacidad').value);
+      var nivel     = parseFloat(document.getElementById('nivel').value);
+
+      if (isNaN(capacidad) || isNaN(nivel) || capacidad <= 0 || nivel < 0 || nivel > 100) {
+        alert('Por favor ingresa valores válidos.');
+        return;
+      }
+
+      var galonesFaltantes = capacidad * ((100 - nivel) / 100);
+      var costo = galonesFaltantes * precio;
+      var div = document.getElementById('resultado');
+      div.style.display = 'block';
+      div.innerHTML =
+        '⛽ Necesitas <strong>' + galonesFaltantes.toFixed(2) + ' galones</strong> para llenar el tanque.<br>' +
+        '💰 Costo estimado: <strong>$' + costo.toFixed(2) + '</strong>';
+    }
+  </script>
+</body>
+</html>

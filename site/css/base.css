@@ -1,44 +1,40 @@
-/* base.css — Reset, variables, tipografía base */
+/* base.css — Reset, variables, tipografía */
 
 :root {
-  --color-primary: #E63946;
-  --color-primary-dark: #B5202C;
-  --color-secondary: #F1A208;
-  --color-bg: #FFF8F0;
-  --color-surface: #FFFFFF;
-  --color-text: #1D1D1D;
-  --color-muted: #6C6C6C;
-  --color-accent: #2A9D8F;
-  --color-border: #E5E5E5;
+  --color-primary:      #F77F00;
+  --color-primary-dark: #C96200;
+  --color-secondary:    #1B2A41;
+  --color-secondary-lt: #243554;
+  --color-bg:           #F4F6F9;
+  --color-surface:      #FFFFFF;
+  --color-text:         #1A1A1A;
+  --color-muted:        #6B7280;
+  --color-accent:       #2EC4B6;
+  --color-danger:       #E63946;
+  --color-border:       #E2E8F0;
 
-  --font-base: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-base:    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-heading: 'Segoe UI', 'Trebuchet MS', sans-serif;
 
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.10);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md: 0 4px 14px rgba(0,0,0,.12);
 
   --max-width: 1200px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-base);
   color: var(--color-text);
   background-color: var(--color-bg);
-  line-height: 1.6;
+  line-height: 1.65;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,35 +42,19 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  color: var(--color-text);
   line-height: 1.25;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 h1 { font-size: 2.25rem; }
 h2 { font-size: 1.75rem; }
-h3 { font-size: 1.3rem; }
+h3 { font-size: 1.25rem; }
 
-p {
-  margin-bottom: 1em;
-}
+p { margin-bottom: 1em; }
 
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+a { color: var(--color-primary); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--color-primary-dark); }
 
-a:hover {
-  color: var(--color-primary-dark);
-}
+img { max-width: 100%; height: auto; display: block; }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-ul {
-  list-style: none;
-}
+ul { list-style: none; }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gasolineras — GASOYA</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">GAS<span>OYA</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="gasolineras.html" class="active">Gasolineras</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="horarios.html">Horarios</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="section">
+        <h2 class="section-title">Gasolineras / Ubicaciones</h2>
+
+        <!-- Mapa placeholder -->
+        <div class="map-placeholder" style="margin-bottom:1.5rem;">
+          <div class="map-icon">🗺️</div>
+          <div>Mapa interactivo disponible en la Entrega Final (Java Spring Boot + API de geolocalización)</div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filters">
+          <span class="filter-chip active">Todas</span>
+          <span class="filter-chip">Abiertas ahora</span>
+          <span class="filter-chip">24 horas</span>
+          <span class="filter-chip">Petroecuador</span>
+          <span class="filter-chip">Primax</span>
+          <span class="filter-chip">Repsol</span>
+        </div>
+
+        <div class="grid grid-cards">
+          <article class="card">
+            <div class="card-img" style="background-color:#FFF3E0;">⛽</div>
+            <div class="card-body">
+              <div class="card-title">Petroecuador Norte</div>
+              <div class="card-meta">Av. de la Prensa y Fernández Salvador</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></div>
+              <div class="card-meta">Extra $2.38 · Súper $3.08 · Diésel $1.90</div>
+            </div>
+            <div class="card-foot">
+              <a href="precios.html" class="btn btn-primary btn-block">Ver precios</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#E8F5E9;">⛽</div>
+            <div class="card-body">
+              <div class="card-title">EP Petroecuador Sur</div>
+              <div class="card-meta">Av. Morán Valverde y Quitumbe</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span></div>
+              <div class="card-meta">Extra $2.40 · Súper $3.10 · Diésel $1.90</div>
+            </div>
+            <div class="card-foot">
+              <a href="precios.html" class="btn btn-primary btn-block">Ver precios</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#FCE4EC;">⛽</div>
+            <div class="card-body">
+              <div class="card-title">Primax El Inca</div>
+              <div class="card-meta">Av. El Inca y 6 de Diciembre</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></div>
+              <div class="card-meta">Extra $2.42 · Súper $3.12 · Diésel $1.92</div>
+            </div>
+            <div class="card-foot">
+              <a href="precios.html" class="btn btn-primary btn-block">Ver precios</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#E3F2FD;">⛽</div>
+            <div class="card-body">
+              <div class="card-title">Repsol La Mariscal</div>
+              <div class="card-meta">Av. Colón y Reina Victoria</div>
+              <div class="card-meta"><span class="badge badge-closed">Cerrada</span></div>
+              <div class="card-meta">Extra $2.39 · Súper $3.09 · Diésel $1.90</div>
+            </div>
+            <div class="card-foot">
+              <a href="horarios.html" class="btn btn-secondary btn-block">Ver horario</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#F3E5F5;">⛽</div>
+            <div class="card-body">
+              <div class="card-title">Petroecuador Cumbayá</div>
+              <div class="card-meta">Av. Interoceánica y Gonzales Suárez</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span></div>
+              <div class="card-meta">Extra $2.40 · Súper $3.10 · Diésel $1.90</div>
+            </div>
+            <div class="card-foot">
+              <a href="precios.html" class="btn btn-primary btn-block">Ver precios</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="background-color:#E0F2F1;">⛽</div>
+            <div class="card-body">
+              <div class="card-title">Primax Los Shyris</div>
+              <div class="card-meta">Av. de los Shyris y Portugal</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></div>
+              <div class="card-meta">Extra $2.41 · Súper $3.11 · Diésel $1.91</div>
+            </div>
+            <div class="card-foot">
+              <a href="precios.html" class="btn btn-primary btn-block">Ver precios</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 GASOYA. Proyecto académico — Diseño de la plataforma WEB.</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horarios — GASOYA</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">GAS<span>OYA</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="gasolineras.html">Gasolineras</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="horarios.html" class="active">Horarios</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <h2 class="section-title">Horarios de atención</h2>
+
+        <div class="filters">
+          <span class="filter-chip active">Todas</span>
+          <span class="filter-chip">Abiertas ahora</span>
+          <span class="filter-chip">24 horas</span>
+          <span class="filter-chip">Norte</span>
+          <span class="filter-chip">Sur</span>
+          <span class="filter-chip">Valle</span>
+        </div>
+
+        <div style="overflow-x:auto;">
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Gasolinera</th>
+                <th>Zona</th>
+                <th>Lun–Vie</th>
+                <th>Sáb</th>
+                <th>Dom</th>
+                <th>Feriados</th>
+                <th>Estado actual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Petroecuador Norte</strong></td>
+                <td>Norte</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></td>
+              </tr>
+              <tr>
+                <td><strong>EP Petroecuador Sur</strong></td>
+                <td>Sur</td>
+                <td>06:00 – 22:00</td>
+                <td>06:00 – 22:00</td>
+                <td>07:00 – 21:00</td>
+                <td>07:00 – 20:00</td>
+                <td><span class="badge badge-open">Abierta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Primax El Inca</strong></td>
+                <td>Norte</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></td>
+              </tr>
+              <tr>
+                <td><strong>Repsol La Mariscal</strong></td>
+                <td>Centro-Norte</td>
+                <td>07:00 – 21:00</td>
+                <td>07:00 – 21:00</td>
+                <td>08:00 – 18:00</td>
+                <td>Cerrada</td>
+                <td><span class="badge badge-closed">Cerrada</span></td>
+              </tr>
+              <tr>
+                <td><strong>Petroecuador Cumbayá</strong></td>
+                <td>Valle</td>
+                <td>06:00 – 22:00</td>
+                <td>06:00 – 22:00</td>
+                <td>07:00 – 20:00</td>
+                <td>07:00 – 20:00</td>
+                <td><span class="badge badge-open">Abierta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Primax Los Shyris</strong></td>
+                <td>Norte</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td>24 h</td>
+                <td><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top:1rem;font-size:.85rem;color:var(--color-muted);">
+          Los horarios pueden variar en días feriados especiales. Consulta directamente con la estación.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 GASOYA. Proyecto académico — Diseño de la plataforma WEB.</div>
+    </div>
+  </footer>
+</body>
+</html>

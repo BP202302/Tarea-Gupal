@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SABORYA — Plataforma de pedidos de comida en línea, ofertas, reservas y listado de restaurantes." />
-  <title>SABORYA — Pide tu comida favorita en línea</title>
+  <meta name="description" content="GASOYA — Consulta precios de combustible, ubica gasolineras, revisa horarios y aprovecha ofertas." />
+  <title>GASOYA — Precios de combustible en línea</title>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -14,157 +14,154 @@
 
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="site-logo">SABOR<span>YA</span></a>
+      <a href="index.html" class="site-logo">GAS<span>OYA</span></a>
 
       <nav class="main-nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="pages/restaurantes.html">Restaurantes</a></li>
-          <li><a href="pages/menu.html">Menú</a></li>
+          <li><a href="pages/gasolineras.html">Gasolineras</a></li>
+          <li><a href="pages/precios.html">Precios</a></li>
+          <li><a href="pages/horarios.html">Horarios</a></li>
           <li><a href="pages/ofertas.html">Ofertas</a></li>
-          <li><a href="pages/reservas.html">Reservas</a></li>
-          <li><a href="pages/pedido.html">Pedido</a></li>
+          <li><a href="pages/calculadora.html">Calculadora</a></li>
           <li><a href="pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>
-
-      <div class="header-actions">
-        <form class="search-bar" role="search" onsubmit="event.preventDefault();">
-          <input type="search" placeholder="Buscar comida..." aria-label="Buscar" />
-          <button type="submit">Buscar</button>
-        </form>
-        <a href="pages/compras.html" class="btn btn-outline">Iniciar sesión</a>
-      </div>
     </div>
   </header>
 
+  <!-- Banda de precios del día -->
+  <div class="price-band">
+    ⛽ Precios de hoy:
+    <span>Extra — $2.40/gal</span>
+    <span>Súper — $3.10/gal</span>
+    <span>Diésel — $1.90/gal</span>
+    <span>Gas Natural — $1.50/gal</span>
+  </div>
+
   <section class="hero">
     <div class="container">
-      <h1>Pide tu comida favorita en minutos</h1>
-      <p>Descubre los mejores restaurantes de tu ciudad, aprovecha ofertas exclusivas y reserva tu mesa desde un solo lugar.</p>
-      <a href="pages/menu.html" class="btn btn-secondary">Ver menú</a>
-      <a href="pages/restaurantes.html" class="btn btn-outline" style="background:white;">Ver restaurantes</a>
+      <h1>Encuentra el combustible más <span>barato</span> cerca de ti</h1>
+      <p>Consulta precios actualizados, ubica gasolineras abiertas ahora y aprovecha las mejores ofertas de tu ciudad.</p>
+      <div class="hero-actions">
+        <a href="pages/precios.html" class="btn btn-primary">Ver precios</a>
+        <a href="pages/gasolineras.html" class="btn btn-outline-white">Ubicar gasolineras</a>
+      </div>
     </div>
   </section>
 
   <main>
     <div class="container">
 
+      <!-- Estadísticas rápidas -->
       <section class="section">
-        <h2 class="section-title">Categorías</h2>
-        <div class="grid grid-cats">
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🍕</div>
-            <div class="cat-name">Pizza</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🍔</div>
-            <div class="cat-name">Hamburguesas</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🍣</div>
-            <div class="cat-name">Sushi</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🥗</div>
-            <div class="cat-name">Saludable</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🍝</div>
-            <div class="cat-name">Pasta</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🌮</div>
-            <div class="cat-name">Mexicana</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🍰</div>
-            <div class="cat-name">Postres</div>
-          </a>
-          <a href="pages/menu.html" class="cat">
-            <div class="cat-icon">🥤</div>
-            <div class="cat-name">Bebidas</div>
-          </a>
+        <div class="grid grid-stats">
+          <div class="stat-box">
+            <div class="stat-label">Gasolineras registradas</div>
+            <div class="stat-value">128</div>
+            <div class="stat-unit">en toda la red</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Precio más bajo Extra</div>
+            <div class="stat-value">$2.35</div>
+            <div class="stat-unit">por galón hoy</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Gasolineras abiertas ahora</div>
+            <div class="stat-value">74</div>
+            <div class="stat-unit">disponibles</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Ofertas activas</div>
+            <div class="stat-value">12</div>
+            <div class="stat-unit">promociones hoy</div>
+          </div>
         </div>
       </section>
 
+      <!-- Gasolineras destacadas -->
       <section class="section">
-        <h2 class="section-title">Restaurantes destacados</h2>
+        <h2 class="section-title">Gasolineras destacadas</h2>
         <div class="grid grid-cards">
           <article class="card">
-            <div class="card-img" style="background-color:#FFE0B2;">🍕</div>
+            <div class="card-img" style="background-color:#FFF3E0;">⛽</div>
             <div class="card-body">
-              <div class="card-title">Pizzería Luna</div>
-              <div class="card-meta">★ 4.8 · Italiana · 25–35 min</div>
-              <div class="card-meta">Envío $1.50</div>
+              <div class="card-title">Petroecuador Norte</div>
+              <div class="card-meta">★ 4.7 · Av. de la Prensa y Fernández Salvador</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></div>
+              <div class="card-price">Extra $2.38/gal</div>
             </div>
             <div class="card-foot">
-              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+              <a href="pages/gasolineras.html" class="btn btn-primary btn-block">Ver detalles</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-img" style="background-color:#FFCDD2;">🍔</div>
+            <div class="card-img" style="background-color:#E8F5E9;">⛽</div>
             <div class="card-body">
-              <div class="card-title">Burger House</div>
-              <div class="card-meta">★ 4.6 · Hamburguesas · 20–30 min</div>
-              <div class="card-meta">Envío gratis</div>
+              <div class="card-title">EP Petroecuador Sur</div>
+              <div class="card-meta">★ 4.5 · Av. Morán Valverde y Quitumbe</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span></div>
+              <div class="card-price">Extra $2.40/gal</div>
             </div>
             <div class="card-foot">
-              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+              <a href="pages/gasolineras.html" class="btn btn-primary btn-block">Ver detalles</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-img" style="background-color:#C8E6C9;">🍣</div>
+            <div class="card-img" style="background-color:#FCE4EC;">⛽</div>
             <div class="card-body">
-              <div class="card-title">Sushi Ko</div>
-              <div class="card-meta">★ 4.9 · Japonesa · 30–40 min</div>
-              <div class="card-meta">Envío $2.00</div>
+              <div class="card-title">Primax El Inca</div>
+              <div class="card-meta">★ 4.6 · Av. El Inca y 6 de Diciembre</div>
+              <div class="card-meta"><span class="badge badge-open">Abierta</span> <span class="badge badge-24h">24 h</span></div>
+              <div class="card-price">Extra $2.42/gal</div>
             </div>
             <div class="card-foot">
-              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+              <a href="pages/gasolineras.html" class="btn btn-primary btn-block">Ver detalles</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-img" style="background-color:#FFF9C4;">🌮</div>
+            <div class="card-img" style="background-color:#E3F2FD;">⛽</div>
             <div class="card-body">
-              <div class="card-title">Tacos El Patrón</div>
-              <div class="card-meta">★ 4.5 · Mexicana · 20–25 min</div>
-              <div class="card-meta">Envío $1.00</div>
+              <div class="card-title">Repsol La Mariscal</div>
+              <div class="card-meta">★ 4.3 · Av. Colón y Reina Victoria</div>
+              <div class="card-meta"><span class="badge badge-closed">Cerrada</span></div>
+              <div class="card-price">Extra $2.39/gal</div>
             </div>
             <div class="card-foot">
-              <a href="pages/menu.html" class="btn btn-primary btn-block">Ver menú</a>
+              <a href="pages/gasolineras.html" class="btn btn-primary btn-block">Ver detalles</a>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- Ofertas del día -->
       <section class="section">
         <h2 class="section-title">Ofertas del día</h2>
         <div class="grid grid-offers">
           <div class="offer-card">
+            <span class="badge badge-offer">Descuento</span>
+            <h3>-$0.05 por galón</h3>
+            <p>En Petroecuador Norte pagando con tarjeta de débito Banco Pichincha.</p>
+            <div class="discount">-$0.05</div>
+          </div>
+          <div class="offer-card">
             <span class="badge badge-offer">2x1</span>
-            <h3>Pizza familiar</h3>
-            <p>Lleva 2 pizzas familiares al precio de 1. Aplica solo hoy.</p>
-            <div class="discount">2x1</div>
-            <a href="pages/ofertas.html" class="btn">Aprovechar</a>
+            <h3>2x1 Lavado de auto</h3>
+            <p>Con cualquier tanqueo mayor a 10 galones en Primax El Inca.</p>
+            <div class="discount">2×1</div>
           </div>
           <div class="offer-card">
-            <span class="badge badge-offer">-30 %</span>
-            <h3>Sushi para dos</h3>
-            <p>Descuento del 30 % en combos para compartir.</p>
-            <div class="discount">-30%</div>
-            <a href="pages/ofertas.html" class="btn">Aprovechar</a>
+            <span class="badge badge-offer">Puntos</span>
+            <h3>Puntos dobles</h3>
+            <p>Acumula el doble de puntos en tu tarjeta de fidelidad. Válido todo el fin de semana.</p>
+            <div class="discount">×2</div>
           </div>
-          <div class="offer-card">
-            <span class="badge badge-offer">$5</span>
-            <h3>Combo burger</h3>
-            <p>Hamburguesa + papas + bebida por solo $5.</p>
-            <div class="discount">$5</div>
-            <a href="pages/ofertas.html" class="btn">Aprovechar</a>
-          </div>
+        </div>
+        <div style="text-align:center; margin-top:1.25rem;">
+          <a href="pages/ofertas.html" class="btn btn-outline">Ver todas las ofertas</a>
         </div>
       </section>
 
@@ -175,16 +172,17 @@
     <div class="container">
       <div class="footer-cols">
         <div>
-          <h4>SABORYA</h4>
-          <p>Plataforma de pedidos, reservas y ofertas de restaurantes.</p>
+          <h4>GASOYA</h4>
+          <p>Plataforma de consulta de precios de combustible, ubicación de gasolineras, horarios y ofertas.</p>
         </div>
         <div>
-          <h4>Enlaces</h4>
+          <h4>Secciones</h4>
           <ul>
-            <li><a href="pages/restaurantes.html">Restaurantes</a></li>
-            <li><a href="pages/menu.html">Menú</a></li>
+            <li><a href="pages/gasolineras.html">Gasolineras</a></li>
+            <li><a href="pages/precios.html">Precios</a></li>
+            <li><a href="pages/horarios.html">Horarios</a></li>
             <li><a href="pages/ofertas.html">Ofertas</a></li>
-            <li><a href="pages/reservas.html">Reservas</a></li>
+            <li><a href="pages/calculadora.html">Calculadora</a></li>
           </ul>
         </div>
         <div>
@@ -192,7 +190,7 @@
           <ul>
             <li><a href="pages/contacto.html">Contacto</a></li>
             <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Términos</a></li>
+            <li><a href="#">Términos de uso</a></li>
             <li><a href="#">Privacidad</a></li>
           </ul>
         </div>
@@ -200,13 +198,13 @@
           <h4>Síguenos</h4>
           <ul>
             <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter / X</a></li>
             <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 SABORYA. Proyecto académico — Diseño de la plataforma WEB.
+        &copy; 2026 GASOYA. Proyecto académico — Diseño de la plataforma WEB.
       </div>
     </div>
   </footer>

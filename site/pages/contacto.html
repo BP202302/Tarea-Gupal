@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto — SABORYA</title>
+  <title>Contacto — GASOYA</title>
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/layout.css" />
   <link rel="stylesheet" href="../css/components.css" />
@@ -12,15 +12,15 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="../index.html" class="site-logo">SABOR<span>YA</span></a>
+      <a href="../index.html" class="site-logo">GAS<span>OYA</span></a>
       <nav class="main-nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="restaurantes.html">Restaurantes</a></li>
-          <li><a href="menu.html">Menú</a></li>
+          <li><a href="gasolineras.html">Gasolineras</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="horarios.html">Horarios</a></li>
           <li><a href="ofertas.html">Ofertas</a></li>
-          <li><a href="reservas.html">Reservas</a></li>
-          <li><a href="pedido.html">Pedido</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
           <li><a href="contacto.html" class="active">Contacto</a></li>
         </ul>
       </nav>
@@ -33,20 +33,25 @@
         <h2 class="section-title">Contáctanos</h2>
 
         <div class="info-grid">
-          <form class="form" style="max-width:none;" onsubmit="event.preventDefault(); alert('Mensaje enviado (simulación). Funcionalidad real en la entrega final.');">
+          <form class="form" onsubmit="event.preventDefault(); alert('Mensaje enviado (simulación). Funcionalidad real en la Entrega Final con Spring Boot.');">
             <div class="form-row two-cols">
               <div>
                 <label class="form-label" for="nombre">Nombre</label>
                 <input class="form-input" id="nombre" type="text" required />
               </div>
               <div>
-                <label class="form-label" for="email">Correo</label>
+                <label class="form-label" for="email">Correo electrónico</label>
                 <input class="form-input" id="email" type="email" required />
               </div>
             </div>
             <div class="form-row">
               <label class="form-label" for="asunto">Asunto</label>
-              <input class="form-input" id="asunto" type="text" required />
+              <select class="form-select" id="asunto">
+                <option>Reportar precio incorrecto</option>
+                <option>Agregar una gasolinera</option>
+                <option>Consulta general</option>
+                <option>Problema técnico</option>
+              </select>
             </div>
             <div class="form-row">
               <label class="form-label" for="mensaje">Mensaje</label>
@@ -57,10 +62,15 @@
 
           <aside class="info-box">
             <h3>Información de contacto</h3>
-            <p><strong>Dirección:</strong><br />Av. Amazonas N32-145 y República<br />Quito — Ecuador</p>
-            <p><strong>Teléfono:</strong><br />+593 2 222 3344</p>
-            <p><strong>Correo:</strong><br />info@saborya.com</p>
-            <p><strong>Horario de atención:</strong><br />Lun – Dom: 08:00 – 23:00</p>
+            <p><strong>Correo:</strong><br />info@gasoya.com</p>
+            <p><strong>Teléfono:</strong><br />+593 2 333 4455</p>
+            <p><strong>Horario de soporte:</strong><br />Lun – Vie: 08:00 – 18:00</p>
+            <p><strong>Reportes de precios:</strong><br />reportes@gasoya.com</p>
+            <p><strong>Redes sociales:</strong><br />
+              <a href="#">Facebook</a> ·
+              <a href="#">Twitter/X</a> ·
+              <a href="#">Instagram</a>
+            </p>
           </aside>
         </div>
       </section>
@@ -69,7 +79,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom">&copy; 2026 SABORYA. Proyecto académico — Diseño de la plataforma WEB.</div>
+      <div class="footer-bottom">&copy; 2026 GASOYA. Proyecto académico — Diseño de la plataforma WEB.</div>
     </div>
   </footer>
 </body>
